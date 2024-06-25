@@ -148,12 +148,12 @@ const MainContent = () => {
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setDirection(infoIndex === projectInfo.length - 1 ? 'left' : 'right');
-      setInfoIndex((prevIndex) => (prevIndex + 1) % projectInfo.length);
-    }, 4000); // Change info every 4 seconds
-    return () => clearInterval(timer);
-  }, [infoIndex]);
+  const timer = setInterval(() => {
+    setDirection(infoIndex === projectInfo.length - 1 ? 'left' : 'right');
+    setInfoIndex((prevIndex) => (prevIndex + 1) % projectInfo.length);
+  }, 4000); // Change info every 4 seconds
+  return () => clearInterval(timer);
+}, [infoIndex, projectInfo.length]);
 
   return (
     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-90 text-orange-500 font-mono p-8 flex flex-col justify-center items-center overflow-hidden">
