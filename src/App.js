@@ -128,7 +128,7 @@ const MainContent = () => {
     {
       icon: Lock,
       title: "Native BTC Programmability",
-      content: "Unlock the full potential of Bitcoin with native programmability. Create complex smart contracts and decentralized applications (dApps) directly on the Bitcoin blockchain."
+      content: "Unlock the full potential of Bitcoin with native programmability. Create complex smart contracts and decentralized applications directly on the Bitcoin blockchain."
     },
     {
       icon: Zap,
